@@ -8,3 +8,19 @@
 
 /* =Theme customization starts here
 -------------------------------------------------------------- */
+
+/* Header */
+.site-header {
+	background-color: #fff;
+	background-size: 95% !important;
+	background-position: 0 30% !important;
+}
+
+/*------------------------------------------------------------ */
+
+/* Media Queries */
+@media (max-width: 768px) {
+	.site-header .home-link {
+		display: none;
+	}
+}
