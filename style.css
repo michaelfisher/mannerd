@@ -232,11 +232,11 @@ footer.entry-meta {
 	color: #808080;
 }
 
-.comment-form textarea {
+.comment-form textarea, .comment-form input {
 	border: 2px solid #d0d0d0;
 }
 
-.comment-form textarea:focus {
+.comment-form textarea:focus, .comment-form input:focus {
 	border: 2px solid #808080;
 }
 
