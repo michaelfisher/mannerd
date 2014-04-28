@@ -8,6 +8,19 @@
 
 /* =Theme customization starts here
 -------------------------------------------------------------- */
+/* Content Width */
+.entry-header, .entry-content, .entry-summary, .entry-meta {
+	margin: 0 auto;
+	max-width: 1040px;
+	width: 95%;
+}
+
+.comments-title, .comment-list, .comment-reply-title, .must-log-in, .comment-respond .comment-form, .comment-respond iframe {
+	margin: 0 auto;
+	max-width: 1040px;
+	width: 95%;
+}
+
 /* Global */
 a:hover {
 	text-decoration: none;
@@ -19,13 +32,6 @@ a:hover {
 
 .entry-content img.alignleft, .entry-content .wp-caption.alignleft {
 	margin-left: 0;
-}
-
-/* Content Width */
-.entry-header, .entry-content, .entry-summary, .entry-meta {
-	margin: 0 auto;
-	max-width: 1040px;
-	width: 95%;
 }
 
 /* Header */
@@ -46,7 +52,7 @@ a:hover {
 }
 
 .nav-menu li:hover > a, .nav-menu li a:hover, .nav-menu li:focus > a, .nav-menu li a:focus {
-	background-color: #808080;
+	background-color: #202020;
 }
 
 .nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a {
@@ -54,9 +60,21 @@ a:hover {
 	font-weight: bold;
 }
 
+.menu-toggle {
+	color: #fff;
+}
+
+.toggled-on .nav-menu li a:hover, .toggled-on .nav-menu ul a:hover {
+	background-color: #202020;
+}
+
 /* Search Field */
 .site-header .search-field {
 	background-image: url(images/search-icon.png);
+}
+
+.site-header .search-field:focus {
+	border: 2px solid #c0c0c0;
 }
 
 /* Content */
@@ -95,6 +113,10 @@ a:hover {
 	color: #808080;
 }
 
+footer.entry-meta {
+	text-align: right;
+}
+
 .entry-content {
 	margin-top: 15px;
 }
@@ -122,8 +144,92 @@ a:hover {
 	color: #c0c0c0;
 }
 
-footer.entry-meta {
-	text-align: right;
+/* Content Navigation */
+.navigation a {
+	color: #404040;
+}
+
+.navigation a:hover {
+	color: #808080;
+}
+
+/* Comments */
+.bypostauthor > .comment-body .fn:before {
+	display: none;
+}
+
+.comment-meta a {
+	color: #404040;
+}
+
+.comment-meta a:hover {
+	color: #808080;
+}
+
+.comment-author .fn, .comment-author .url, .comment-reply-link, .comment-reply-login {
+	color: #404040;
+}
+
+.comment-author .fn:hover, .comment-author .url:hover, .comment-reply-link:hover, .comment-reply-login:hover {
+	color: #808080;
+}
+
+.comment-list .children {
+	margin-left: 50px;
+}
+
+.comment-respond {
+	background-color: #f0f0f0;
+}
+
+.comment-respond .logged-in-as a {
+	color: #404040;
+}
+
+.comment-respond .logged-in-as a:hover {
+	color: #808080;
+}
+
+.comment-form textarea {
+	border: 2px solid #d0d0d0;
+}
+
+.comment-form textarea:focus {
+	border: 2px solid #808080;
+}
+
+.form-allowed-tags {
+	display: none;
+}
+
+/* Buttons */
+button, input[type="submit"], input[type="button"], input[type="reset"] {
+	background: #707070;
+	background: -webkit-linear-gradient(top, #707070 0%, #505050 100%);
+	background: linear-gradient(to bottom, #707070 0%, #505050 100%);
+	border: none;
+	border-bottom: none; /*3px solid #b93207*/
+	border-radius: 2px;
+	color: #fff;
+	display: inline-block;
+	padding: 11px 24px 10px;
+	text-decoration: none;
+}
+
+button:hover, button:focus, input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:focus, input[type="button"]:focus, input[type="reset"]:focus {
+	background: #606060;
+	background: -webkit-linear-gradient(top, #606060 0%, #404040 100%);
+	background: linear-gradient(to bottom, #606060 0%, #404040 100%);
+	outline: none;
+}
+
+button:active, input[type="submit"]:active, input[type="button"]:active, input[type="reset"]:active {
+	background: #505050;
+	background: -webkit-linear-gradient(top, #505050 0%, #303030 100%);
+	background: linear-gradient(to bottom, #505050 0%, #303030 100%);
+	border: none;
+	border-top: none; /*3px solid #b93207*/
+	padding: 10px 24px 11px;
 }
 
 /*------------------------------------------------------------ */
