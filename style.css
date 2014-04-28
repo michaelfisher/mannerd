@@ -129,6 +129,10 @@ a:hover {
 	margin: 0;
 }
 
+.entry-meta .date a:before, .entry-meta .categories-links a:before, .entry-meta .edit-link a:before {
+	display: none;
+}
+
 .entry-meta a {
 	color: #404040;
 	font-family: "Crimson";
@@ -136,6 +140,17 @@ a:hover {
 
 .entry-meta a:hover {
 	color: #808080;
+}
+
+.entry-meta .categories-links a {
+	background-color: #f0f0f0;
+	color: #808080;
+	padding: 0.25em 0.25em 0.15em 0.25em;
+	border-radius: 4px;
+}
+
+.entry-meta .categories-links a:hover {
+	color: #c0c0c0;
 }
 
 footer.entry-meta {
