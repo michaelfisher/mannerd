@@ -8,6 +8,12 @@
 
 /* =Theme customization starts here
 -------------------------------------------------------------- */
+/* Global */
+a:hover {
+	text-decoration: none;
+}
+
+/* Content Width */
 .entry-header, .entry-content, .entry-summary, .entry-meta {
 	margin: 0 auto;
 	max-width: 1040px;
@@ -46,9 +52,26 @@
 }
 
 /* Content */
+.entry-header .entry-title {
+	margin: 0;
+}
+
+.entry-header .entry-meta {
+	margin: 0;
+}
+
+.entry-content {
+	margin-top: 15px;
+}
+
 .entry-content p {
 	text-align: justify;
 	text-indent: 50px;
+	margin-bottom: 15px;
+}
+
+footer.entry-meta {
+	text-align: right;
 }
 
 /*------------------------------------------------------------ */
