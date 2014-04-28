@@ -21,6 +21,30 @@
 	background-position: 0 30% !important;
 }
 
+/* Navbar */
+.navbar {
+	background-color: #000;
+}
+
+.nav-menu li a {
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.nav-menu li:hover > a, .nav-menu li a:hover, .nav-menu li:focus > a, .nav-menu li a:focus {
+	background-color: #808080;
+}
+
+.nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a {
+	color: #fff;
+	font-weight: bold;
+}
+
+/* Search Field */
+.site-header .search-field {
+	background-image: url(images/search-icon.png);
+}
+
 /*------------------------------------------------------------ */
 
 /* Media Queries */
