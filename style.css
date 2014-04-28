@@ -45,6 +45,12 @@
 	background-image: url(images/search-icon.png);
 }
 
+/* Content */
+.entry-content p {
+	text-align: justify;
+	text-indent: 50px;
+}
+
 /*------------------------------------------------------------ */
 
 /* Media Queries */
