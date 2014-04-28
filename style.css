@@ -99,6 +99,7 @@ a:hover {
 
 .menu-toggle {
 	color: #fff;
+	font-family: "Inconsolata";
 }
 
 .toggled-on .nav-menu li a:hover, .toggled-on .nav-menu ul a:hover {
