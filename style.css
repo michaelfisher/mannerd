@@ -12,33 +12,22 @@
 /* Fonts */
 @font-face {
     font-family: 'Crimson';
-    src: url('fonts/crimsontext-roman-webfont.eot');
-    src: url('fonts/crimsontext-roman-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/crimsontext-roman-webfont.woff') format('woff'),
-         url('fonts/crimsontext-roman-webfont.ttf') format('truetype'),
-         url('fonts/crimsontext-roman-webfont.svg#crimson_textroman') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Crimson Italic';
-    src: url('fonts/crimsontext-italic-webfont.eot');
-    src: url('fonts/crimsontext-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/crimsontext-italic-webfont.woff') format('woff'),
-         url('fonts/crimsontext-italic-webfont.ttf') format('truetype'),
-         url('fonts/crimsontext-italic-webfont.svg#crimson_textitalic') format('svg');
+    src: url('fonts/crimson/crimsontext-roman-webfont.eot');
+    src: url('fonts/crimson/crimsontext-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/crimson/crimsontext-roman-webfont.woff') format('woff'),
+         url('fonts/crimson/crimsontext-roman-webfont.ttf') format('truetype'),
+         url('fonts/crimson/crimsontext-roman-webfont.svg#crimson_textroman') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Inconsolata';
-    src: url('fonts/inconsolata-webfont.eot');
-    src: url('fonts/inconsolata-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/inconsolata-webfont.woff') format('woff'),
-         url('fonts/inconsolata-webfont.ttf') format('truetype'),
-         url('fonts/inconsolata-webfont.svg#inconsolatamedium') format('svg');
+    src: url('fonts/inconsolata/inconsolata-webfont.eot');
+    src: url('fonts/inconsolata/inconsolata-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/inconsolata/inconsolata-webfont.woff') format('woff'),
+         url('fonts/inconsolata/inconsolata-webfont.ttf') format('truetype'),
+         url('fonts/inconsolata/inconsolata-webfont.svg#inconsolatamedium') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -57,6 +46,10 @@
 }
 
 /* Global */
+body {
+	font-size: 1em;
+}
+
 a:hover {
 	text-decoration: none;
 }
@@ -71,14 +64,26 @@ a:hover {
 
 /* Header */
 .site-header {
-	background-color: #fff;
-	background-size: 95% !important;
-	background-position: 0 30% !important;
+	background: none !important;
+}
+
+.site-header .home-link {
+	min-height: 85px; 
+	padding: 0;
+	display: inline;
+}
+
+.site-header .home-link #custom-header {
+	width: 100%;
 }
 
 /* Navbar */
 .navbar {
 	background-color: #000;
+}
+
+.main-navigation {
+	padding: 0 20px;
 }
 
 .nav-menu li a {
@@ -145,9 +150,20 @@ a:hover {
 
 .entry-header .entry-meta {
 	margin: 0;
+	font-family: 'Crimson';
+	color: #404040;
+	display: block;
 }
 
-.entry-meta .date a:before, .entry-meta .categories-links a:before, .entry-meta .edit-link a:before {
+.entry-header .entry-meta .date {
+	font-size: 1.25em;
+}
+
+.entry-header .entry-meta .author {
+	display: inherit;
+}
+
+.entry-meta .date a:before, .entry-meta .categories-links a:before, .entry-meta .edit-link a:before, .entry-meta .author a:before {
 	display: none;
 }
 
@@ -186,10 +202,17 @@ footer.entry-meta {
 	margin-bottom: 15px;
 }
 
-.entry-content p:first-child:first-letter {
+.entry-content > p:first-child:first-letter {
 	font-size: 1.75em;
-	font-weight: bold;
 	line-height: 1em;
+}
+
+.entry-content a {
+	color: #404040;
+}
+
+.entry-content a:hover {
+	color: #808080;
 }
 
 .entry-content a.more-link {
@@ -202,6 +225,10 @@ footer.entry-meta {
 
 .entry-content a.more-link:hover {
 	color: #c0c0c0;
+}
+
+.comments-link a:before {
+	vertical-align: text-top;
 }
 
 /* Content Navigation */
@@ -240,6 +267,11 @@ footer.entry-meta {
 
 .comment-respond {
 	background-color: #f0f0f0;
+	font-family: "Inconsolata";
+}
+
+.comment-reply-title {
+	font-family: "Inconsolata";
 }
 
 .comment-respond .logged-in-as a {
@@ -260,6 +292,17 @@ footer.entry-meta {
 
 .form-allowed-tags {
 	display: none;
+}
+
+/* Footer */
+.site-footer {
+	background-color: #000;
+}
+
+.site-footer a {
+	color: #fff;
+	font-size: .90em;
+	font-family: "Inconsolata";
 }
 
 /* Buttons */
@@ -295,7 +338,7 @@ button:active, input[type="submit"]:active, input[type="button"]:active, input[t
 /*------------------------------------------------------------ */
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 643px) {
 	.site-header .home-link {
 		display: none;
 	}
