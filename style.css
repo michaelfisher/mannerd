@@ -92,6 +92,7 @@ a:hover {
 	color: #fff;
 	text-transform: uppercase;
 	font-family: "Inconsolata";
+	font-size: 18px;
 }
 
 .nav-menu li:hover > a, .nav-menu li a:hover, .nav-menu li:focus > a, .nav-menu li a:focus {
@@ -106,7 +107,8 @@ a:hover {
 
 .menu-toggle {
 	color: #fff;
-	font-family: "Inconsolata";
+	font: 18px "Inconsolata";
+	text-transform: uppercase;
 }
 
 .toggled-on .nav-menu li a:hover, .toggled-on .nav-menu ul a:hover {
@@ -126,6 +128,7 @@ a:hover {
 .entry-header .entry-title {
 	margin: 0;
 	font-family: "Crimson";
+	font-weight: normal;
 	color: #202020;
 }
 
@@ -234,15 +237,31 @@ footer.entry-meta {
 }
 
 /* Content Navigation */
-.navigation a {
-	color: #404040;
+.nav-links a {
+	color: #808080;
+	background-color: #f0f0f0;
+	padding: 0.25em 0.25em 0.15em 0.25em;
+	border-radius: 4px;
+	white-space: nowrap;
+	font-family: "Crimson";
+	font-style: normal;
 }
 
-.navigation a:hover {
-	color: #808080;
+.nav-links a:hover {
+	color: #c0c0c0;
 }
 
 /* Comments */
+.comments-title {
+	font-family: "Crimson";
+	font-weight: normal;
+	text-transform: capitalize;
+}
+
+.comment-metadata {
+	font-family: "Crimson";
+}
+
 .bypostauthor > .comment-body .fn:before {
 	display: none;
 }
@@ -256,11 +275,16 @@ footer.entry-meta {
 }
 
 .comment-author .fn, .comment-author .url, .comment-reply-link, .comment-reply-login {
+	font-family: "Crimson";
 	color: #404040;
 }
 
 .comment-author .fn:hover, .comment-author .url:hover, .comment-reply-link:hover, .comment-reply-login:hover {
 	color: #808080;
+}
+
+.comment-content {
+	font-family: "Crimson";
 }
 
 .comment-list .children {
@@ -269,7 +293,7 @@ footer.entry-meta {
 
 .comment-respond {
 	background-color: #f0f0f0;
-	font-family: "Inconsolata";
+	font-family: "Crimson";
 }
 
 .comment-reply-title {
@@ -294,6 +318,25 @@ footer.entry-meta {
 
 .form-allowed-tags {
 	display: none;
+}
+
+/* Archive Page */
+.archive-header {
+	background-color: #f0f0f0;
+}
+
+.archive-title {
+	text-align: center;
+	font-family: "Inconsolata";
+	font-weight: normal;
+}
+
+.archive-title a {
+	color: #404040;
+}
+
+.archive-title a:hover {
+	color: #808080;
 }
 
 /* Footer */
