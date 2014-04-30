@@ -79,7 +79,9 @@ a:hover {
 
 /* Navbar */
 .navbar {
-	background-color: #000;
+	background: #1a1a1a;
+	background: -webkit-linear-gradient(top, #1a1a1a 0%, #000 100%);
+	background: linear-gradient(to bottom, #1a1a1a 0%, #000 100%);
 }
 
 .main-navigation {
