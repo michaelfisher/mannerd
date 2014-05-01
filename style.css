@@ -118,6 +118,7 @@ a:hover {
 /* Search Field */
 .site-header .search-field {
 	background-image: url(images/search-icon.png);
+	font-family: "Inconsolata";
 }
 
 .site-header .search-field:focus {
@@ -130,6 +131,10 @@ a:hover {
 	font-family: "Crimson";
 	font-weight: normal;
 	color: #202020;
+}
+
+.page .entry-header {
+	text-align: center;
 }
 
 .entry-header .entry-title a {
@@ -154,6 +159,7 @@ a:hover {
 }
 
 .entry-header .entry-meta {
+	width: 100%;
 	margin: 0;
 	font-family: 'Crimson';
 	color: #404040;
@@ -162,6 +168,11 @@ a:hover {
 
 .entry-header .entry-meta .date {
 	font-size: 1.25em;
+}
+
+.entry-header .entry-meta .categories-links {
+	float: right;
+	margin-right: 0;
 }
 
 .entry-header .entry-meta .author {
@@ -237,6 +248,10 @@ footer.entry-meta {
 }
 
 /* Content Navigation */
+.post-navigation {
+	font-size: 1em;
+}
+
 .nav-links a {
 	color: #808080;
 	background-color: #f0f0f0;

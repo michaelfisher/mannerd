@@ -28,9 +28,9 @@ function twentythirteen_entry_meta() {
 		twentythirteen_entry_date();
 
 	// Translators: used between list items, there is a space after the comma.
-	$categories_list = get_the_category_list( __( ', ', 'twentythirteen' ) );
+	$categories_list = get_the_category_list( __( ' ', 'twentythirteen' ) );
 	if ( $categories_list ) {
-		//echo '<span class="categories-links">' . $categories_list . '</span>';
+		echo '<span class="categories-links">' . $categories_list . '</span>';
 	}
 
 	// Translators: used between list items, there is a space after the comma.
