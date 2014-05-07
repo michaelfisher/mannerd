@@ -403,3 +403,14 @@ button:active, input[type="submit"]:active, input[type="button"]:active, input[t
 		display: none;
 	}
 }
+
+/*------------------------------------------------------------ */
+
+/* Custom Add-Ons */
+img.rounded {
+	border-radius: 5px;
+}
+
+img.circle {
+	border-radius: 50%;
+}
