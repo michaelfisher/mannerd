@@ -365,6 +365,18 @@ footer.entry-meta {
 	font-family: "Inconsolata";
 }
 
+footer #social-icons #facebook:hover {
+	color: #3b5998;
+}
+
+footer #social-icons #twitter:hover {
+	color: #55acee;
+}
+
+footer #social-icons #pinterest:hover {
+	color: #c8232c;
+}
+
 /* Buttons */
 button, input[type="submit"], input[type="button"], input[type="reset"] {
 	background: #707070;
