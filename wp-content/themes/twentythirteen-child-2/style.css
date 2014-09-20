@@ -1,0 +1,17 @@
+/*
+ Theme Name:   Twenty Thirteen Child 2
+ Description:  Twenty Thirteen Child Theme
+ Template:     twentythirteen
+ Version:      1.0.0
+ Text Domain:  twentythirteen-child-2
+*/
+
+@import url("../twentythirteen/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+.entry-header, .entry-content, .entry-summary, .entry-meta {
+	margin: 0 auto;
+	max-width: 1040px;
+	width: 100%;
+}
