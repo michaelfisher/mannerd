@@ -1,4 +1,5 @@
 ### Ignored files ###
 wp-config.php
+wp-content/uploads
 .htaccess
 .DS_Store
