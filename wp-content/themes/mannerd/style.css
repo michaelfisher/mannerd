@@ -210,11 +210,11 @@ footer.entry-meta {
 
 .entry-content {
 	margin-top: 15px;
+	font-family: "Crimson";
+	text-align: justify;
 }
 
 .entry-content p {
-	font-family: "Crimson";
-	text-align: justify;
 	text-indent: 50px;
 	margin-bottom: 15px;
 }
