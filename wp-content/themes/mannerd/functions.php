@@ -139,7 +139,7 @@ function jeherve_custom_image( $media, $post_id, $args ) {
         return $media;
     } else {
         $permalink = get_permalink( $post_id );
-        $url = apply_filters( 'jetpack_photon_url', 'ogimage.png' );
+        $url = return get_bloginfo( 'url' ) . '/ogimage.png';
      
         return array( array(
             'type'  => 'image',
