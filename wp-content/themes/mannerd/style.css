@@ -252,6 +252,11 @@ footer.entry-meta {
 	margin-bottom: 15px;
 }
 
+/* Sharing Buttons */
+.sharedaddy .sd-sharing-enabled {
+	text-align: center;
+}
+
 /* Content Navigation */
 .post-navigation {
 	font-size: 1em;
