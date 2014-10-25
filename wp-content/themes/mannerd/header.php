@@ -27,6 +27,12 @@
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 	<link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/apple-touch-icon.png" />
 	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/fonts/font-awesome/css/font-awesome.min.css">
+	
+	<meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/apple-touch-icon.png" />
+	<meta property="og:url" content="<?php echo esc_url( home_url( '/' ) ); ?>" />
+	<meta property="og:title" content="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
+	<meta property="og:description" content="<?php bloginfo( 'description' ); ?>" />
+
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
