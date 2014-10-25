@@ -139,7 +139,7 @@ function jeherve_custom_image( $media, $post_id, $args ) {
         return $media;
     } else {
         $permalink = get_permalink( $post_id );
-        $url = apply_filters( 'jetpack_photon_url', 'echo get_stylesheet_directory_uri();/apple-touch-icon.png' );
+        $url = apply_filters( 'jetpack_photon_url', 'ogimage.png' );
      
         return array( array(
             'type'  => 'image',
