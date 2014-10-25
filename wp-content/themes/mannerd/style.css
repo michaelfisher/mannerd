@@ -50,6 +50,10 @@ body {
 	font-size: 1em;
 }
 
+ul {
+	list-style-type: disc;
+}
+
 a:hover {
 	text-decoration: none;
 }
