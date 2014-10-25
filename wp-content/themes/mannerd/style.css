@@ -171,6 +171,7 @@ a:hover {
 }
 
 .entry-header .entry-meta .categories-links {
+	display: none;
 	float: right;
 	margin-right: 0;
 }
@@ -190,10 +191,6 @@ a:hover {
 
 .entry-meta a:hover {
 	color: #808080;
-}
-
-.entry-meta .categories-links {
-	display: none;
 }
 
 .entry-meta .categories-links a {
