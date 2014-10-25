@@ -134,5 +134,22 @@ function modify_twentythirteen_custom_header_setup() {
 }
 add_action( 'after_setup_theme', 'modify_twentythirteen_custom_header_setup', 11 );
 
+function jeherve_custom_image( $media, $post_id, $args ) {
+    if ( $media ) {
+        return $media;
+    } else {
+        $permalink = get_permalink( $post_id );
+        $url = apply_filters( 'jetpack_photon_url', 'echo get_stylesheet_directory_uri(); ?>/apple-touch-icon.png' );
+     
+        return array( array(
+            'type'  => 'image',
+            'from'  => 'custom_fallback',
+            'src'   => esc_url( $url ),
+            'href'  => $permalink,
+        ) );
+    }
+}
+add_filter( 'jetpack_images_get_images', 'jeherve_custom_image', 10, 3 );
+
 
 ?>
