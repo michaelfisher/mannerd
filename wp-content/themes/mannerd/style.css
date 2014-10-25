@@ -192,6 +192,10 @@ a:hover {
 	color: #808080;
 }
 
+.entry-meta .categories-links {
+	display: none;
+}
+
 .entry-meta .categories-links a {
 	background-color: #f0f0f0;
 	color: #808080;
