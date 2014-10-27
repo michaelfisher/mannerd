@@ -212,6 +212,8 @@ footer.entry-meta {
 	text-align: right;
 }
 
+
+/* Entry Content */
 .entry-content {
 	margin-top: 15px;
 	font-family: "Crimson";
@@ -226,6 +228,10 @@ footer.entry-meta {
 .entry-content > p:first-child:first-letter {
 	font-size: 1.75em;
 	line-height: 1em;
+}
+
+.entry-content blockquote {
+	font-size: 1em;
 }
 
 .entry-content a {
