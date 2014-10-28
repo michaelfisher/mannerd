@@ -28,6 +28,6 @@
 	</div><!-- #page -->
 
 	<?php wp_footer(); ?>
-	<!--Add Google Analytics code here-->
+
 </body>
 </html>
