@@ -38,8 +38,8 @@
 
 	<?php
 	$host = $_SERVER['HTTP_HOST']; 
- 	if($host == "www.mannerd.com" or $host == "mannerd.com") {; ?>
-    	<!--Google Analytics-->
+ 	if($host == "www.mannerd.com" or $host == "mannerd.com" && current_user_can( 'edit_posts' )) {; ?>
+    	<!--Google Analytics, since we're on the live site-->
 		<script>
 	  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -51,7 +51,7 @@
 		</script>
 	<?php } 
 	else {; ?>
-		<!--Nope, no Google Analytics here...it's not the live site.-->
+		<!--Nope, no Google Analytics here.-->
 	<?php }; ?>
 
 </head>
