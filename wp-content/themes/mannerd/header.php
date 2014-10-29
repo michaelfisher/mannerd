@@ -38,7 +38,7 @@
 
 	<?php
 	$host = $_SERVER['HTTP_HOST']; 
- 	if($host == "www.mannerd.com" or $host == "mannerd.com" && current_user_can( 'edit_posts' )) {; ?>
+ 	if($host == "www.mannerd.com" or $host == "mannerd.com" && !current_user_can( 'edit_posts' )) {; ?>
     	<!--Google Analytics, since we're on the live site-->
 		<script>
 	  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
