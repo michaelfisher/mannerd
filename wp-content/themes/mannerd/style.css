@@ -85,6 +85,10 @@
 }
 
 /* Global */
+html {
+	font-family: "Crimson";
+}
+
 body {
 	font-size: 1em;
 }
@@ -166,6 +170,16 @@ a:hover {
 
 .site-header .search-field:focus {
 	border: 2px solid #c0c0c0;
+}
+
+/* Content Header */
+.page-header {
+	background-color: #f0f0f0;
+}
+
+.page-title {
+	font-family: "Crimson";
+	font-style: normal;
 }
 
 /* Content */
@@ -372,7 +386,8 @@ footer.entry-meta {
 }
 
 .comment-reply-title {
-	font-family: "Inconsolata";
+	font-family: "Crimson";
+	font-style: normal;
 }
 
 .comment-respond .logged-in-as a {
