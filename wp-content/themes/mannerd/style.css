@@ -288,7 +288,8 @@ footer.entry-meta {
 }
 
 .entry-content a {
-	color: #404040;
+	color: #A0A0A0;
+	font-weight: bold;
 }
 
 .entry-content a:hover {
