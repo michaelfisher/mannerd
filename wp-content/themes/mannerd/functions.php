@@ -5,7 +5,7 @@ function custom_favicons() {
    $apple_icon_path = get_stylesheet_directory_uri() . '/images/apple-touch-icon.png';
    $og_image_path =  get_stylesheet_directory_uri() . '/images/ogimage.png';
    echo '<link rel="shortcut icon" href="' . $favicon_path . '" />';
-   echo '<link rel="apple-touch-icon" href="' . $appl_icon_path . '" />';
+   echo '<link rel="apple-touch-icon" href="' . $apple_icon_path . '" />';
    echo '<meta property="og:image" content="' . $og_image_path . '" />';
 }
 
