@@ -1,5 +1,17 @@
 <?php
 
+function custom_favicons() {
+   $favicon_path = get_stylesheet_directory_uri() . '/images/favicon.ico';
+   $apple_icon_path = get_stylesheet_directory_uri() . '/images/apple-touch-icon.png';
+   $og_image_path =  get_stylesheet_directory_uri() . '/images/ogimage.png';
+   echo '<link rel="shortcut icon" href="' . $favicon_path . '" />';
+   echo '<link rel="apple-touch-icon" href="' . $appl_icon_path . '" />';
+   echo '<meta property="og:image" content="' . $og_image_path . '" />';
+}
+
+add_action( 'wp_head', 'custom_favicons' ); //front end
+add_action( 'admin_head', 'custom_favicons' ); //admin end
+
 function custom_login_logo() { ?>
 	<style type="text/css">
 		body.login div#login h1 a {
