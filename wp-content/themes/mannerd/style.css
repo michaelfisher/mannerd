@@ -16,6 +16,7 @@
     font-family: 'Crimson';
     src: url('fonts/crimson/crimsontext-roman-webfont.eot');
     src: url('fonts/crimson/crimsontext-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/crimson/crimsontext-roman-webfont.woff2') format('woff2'),
          url('fonts/crimson/crimsontext-roman-webfont.woff') format('woff'),
          url('fonts/crimson/crimsontext-roman-webfont.ttf') format('truetype'),
          url('fonts/crimson/crimsontext-roman-webfont.svg#crimson_textroman') format('svg');
@@ -287,13 +288,13 @@ footer.entry-meta {
 	font-size: 1em;
 }
 
-.entry-content a {
+.entry-content p a {
 	color: #A0A0A0;
-	font-weight: bold;
 }
 
-.entry-content a:hover {
+.entry-content p a:hover {
 	color: #808080;
+	text-decoration: underline;
 }
 
 .entry-content a.more-link {
@@ -304,6 +305,7 @@ footer.entry-meta {
 	border-radius: 4px;
 	white-space: nowrap;
 	font-weight: normal;
+	text-decoration: none;
 }
 
 .entry-content a.more-link:hover {

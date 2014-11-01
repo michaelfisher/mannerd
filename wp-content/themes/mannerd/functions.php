@@ -1,9 +1,9 @@
 <?php
 
 function custom_favicons() {
-   $favicon_path = get_stylesheet_directory_uri() . '/images/favicon.ico';
-   $apple_icon_path = get_stylesheet_directory_uri() . '/images/apple-touch-icon.png';
-   $og_image_path =  get_stylesheet_directory_uri() . '/images/ogimage.png';
+   $favicon_path = get_stylesheet_directory_uri() . '/images/favicon.ico' . '?v=1.0';
+   $apple_icon_path = get_stylesheet_directory_uri() . '/images/apple-touch-icon.png' . '?v=1.0';
+   $og_image_path =  get_stylesheet_directory_uri() . '/images/ogimage.png' . '?v=1.0';
    echo '<link rel="shortcut icon" href="' . $favicon_path . '" />';
    echo '<link rel="apple-touch-icon" href="' . $apple_icon_path . '" />';
    echo '<meta property="og:image" content="' . $og_image_path . '" />';
