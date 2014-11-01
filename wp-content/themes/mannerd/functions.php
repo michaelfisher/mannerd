@@ -78,7 +78,7 @@ function twentythirteen_entry_meta() {
 		printf( '<span class="author vcard">Posted by: <a class="url fn n" href="%1$s" title="%2$s" rel="author"><img style="height:2em;" src="%3$s"></a></span>',
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 			esc_attr( sprintf( __( 'View all posts by %s', 'twentythirteen' ), get_the_author() ) ),
-			esc_url( get_stylesheet_directory_uri() . '/images/' . get_the_author('user_login') . '-signature.png' )
+			esc_url( get_stylesheet_directory_uri() . '/images/' . get_the_author_meta('user_login') . '-signature.png' )
 		);
 	}
 }
