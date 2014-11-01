@@ -310,6 +310,7 @@ footer.entry-meta {
 
 .entry-content a.more-link:hover {
 	color: #c0c0c0;
+	text-decoration: none;
 }
 
 .comments-link a:before {
