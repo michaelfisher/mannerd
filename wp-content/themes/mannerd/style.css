@@ -415,6 +415,15 @@ footer.entry-meta {
 	display: none;
 }
 
+/* Contact Form */
+.contact-form textarea, .contact-form input {
+	border: 2px solid #d0d0d0;
+}
+
+.contact-form textarea:focus, .contact-form input:focus {
+	border: 2px solid #808080;
+}
+
 /* Archive Page */
 .archive-header {
 	background-color: #f0f0f0;
