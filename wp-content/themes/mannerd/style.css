@@ -424,6 +424,10 @@ footer.entry-meta {
 	border: 2px solid #808080;
 }
 
+.contact-submit {
+	text-indent: 0;
+}
+
 /* Archive Page */
 .archive-header {
 	background-color: #f0f0f0;
