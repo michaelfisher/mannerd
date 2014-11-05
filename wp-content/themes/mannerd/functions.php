@@ -76,8 +76,24 @@ function twentythirteen_entry_meta() {
 	// Post author
 	$author_signature_path = get_stylesheet_directory() . '/images/' . get_the_author_meta('user_login') . '-signature.png';
 	$author_signature_image = get_stylesheet_directory_uri() . '/images/' . get_the_author_meta('user_login') . '-signature.png';
+	$guest_author = get_post_meta( get_the_ID(), 'Guest Author Name', true );
+	$guest_author_signature_path = get_stylesheet_directory() . '/images/' . strtolower( $guest_author ) . '-signature.png';
+	$guest_author_signature_image = get_stylesheet_directory_uri() . '/images/' . strtolower( $guest_author ) . '-signature.png';
 	if ( 'post' == get_post_type() ) {
-		if ( file_exists( $author_signature_path ) ) {
+		if ( ! empty( $guest_author ) ) {
+			if ( file_exists( $guest_author_signature_path ) ) {
+				printf( '<span class="author vcard">Posted by: <img class="%1$s-signature" src="%2$s"></span>',
+					strtolower( $guest_author ),
+					esc_url( $guest_author_signature_image )
+				);
+			}
+			else {
+				printf( '<span class="author vcard">Posted by: %1$s</span>',
+				$guest_author
+				);
+			}
+		}
+		elseif ( file_exists( $author_signature_path ) ) {
 			printf( '<span class="author vcard">Posted by: <a class="url fn n" href="%1$s" title="%2$s" rel="author"><img class="%3$s-signature" src="%4$s"></a></span>',
 				esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 				esc_attr( sprintf( __( 'View all posts by %s', 'twentythirteen' ), get_the_author() ) ),
