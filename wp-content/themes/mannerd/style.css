@@ -72,6 +72,15 @@
     font-style: normal;
 }
 
+/* Signatures */
+.michael-signature {
+	height: 1em;
+}
+
+.brian-signature {
+	height: 2em;
+}
+
 /* Content Width */
 .entry-header, .entry-content, .entry-summary, .entry-meta {
 	margin: 0 auto;
