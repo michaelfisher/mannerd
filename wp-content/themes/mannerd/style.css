@@ -81,6 +81,10 @@
 	height: 2em;
 }
 
+.chris-signature {
+	height: 2em;
+}
+
 /* Content Width */
 .entry-header, .entry-content, .entry-summary, .entry-meta {
 	margin: 0 auto;

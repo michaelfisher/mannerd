@@ -82,13 +82,14 @@ function twentythirteen_entry_meta() {
 	if ( 'post' == get_post_type() ) {
 		if ( ! empty( $guest_author ) ) {
 			if ( file_exists( $guest_author_signature_path ) ) {
-				printf( '<span class="author vcard">Posted by: <img class="%1$s-signature" src="%2$s"></span>',
+				printf( '<span class="author vcard">Posted by: <img class="%1$s-signature" src="%2$s" title="Guest Author: %3$s"></span>',
 					strtolower( $guest_author ),
-					esc_url( $guest_author_signature_image )
+					esc_url( $guest_author_signature_image ),
+					$guest_author
 				);
 			}
 			else {
-				printf( '<span class="author vcard">Posted by: %1$s</span>',
+				printf( '<span class="author vcard">Posted by: <span title="Guest Author: %1$s">%1$s</span></span>',
 				$guest_author
 				);
 			}
