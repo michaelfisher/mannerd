@@ -192,5 +192,11 @@ function jeherve_custom_image( $media, $post_id, $args ) {
 }
 add_filter( 'jetpack_images_get_images', 'jeherve_custom_image', 10, 3 );
 
+function remove_post_formats() {
+	remove_theme_support('post-formats');
+}
+
+add_action ('after_setup_theme', 'remove_post_formats', 11);
+
 
 ?>
