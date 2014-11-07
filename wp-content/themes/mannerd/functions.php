@@ -1,5 +1,6 @@
 <?php
 
+// Set custom branding icons (favicon, apple-touch-icon, and OpenGraph image)
 function custom_favicons() {
    $favicon_path = get_stylesheet_directory_uri() . '/images/favicon.ico' . '?v=1.0';
    $apple_icon_path = get_stylesheet_directory_uri() . '/images/apple-touch-icon.png' . '?v=1.0';
@@ -12,6 +13,7 @@ function custom_favicons() {
 add_action( 'wp_head', 'custom_favicons' ); //front end
 add_action( 'admin_head', 'custom_favicons' ); //admin end
 
+// Set custom logo on login page
 function custom_login_logo() { ?>
 	<style type="text/css">
 		body.login div#login h1 a {
@@ -23,6 +25,7 @@ function custom_login_logo() { ?>
 
 add_action( 'login_enqueue_scripts', 'custom_login_logo' );
 
+// Set URL for custom logo on login page (defaults to wordpress.org)
 function custom_login_logo_url() {
 	return get_bloginfo( 'url' );
 }
@@ -33,18 +36,21 @@ function custom_login_logo_url_title() {
 }
 add_filter( 'login_headertitle', 'custom_login_logo_url_title' );
 
+// Set the post thumbnail size to 1040px x 270px
 function child_after_setup_theme() {
 	set_post_thumbnail_size( 1040, 270, true );
 }
 
 add_action( 'after_setup_theme', 'child_after_setup_theme', 11 );
 
+// Remove support for Gogle Fonts
 function remove_google_fonts() {
 	wp_dequeue_style( 'twentythirteen-fonts' );
 }
 
 add_action( 'wp_enqueue_scripts', 'remove_google_fonts', 11 );
 
+// Update text on Featured Image box to guide user when uploading an image
 function change_image_box() {
 	if ( $thumbnail_support )
 		remove_meta_box('postimagediv', __('Featured Image'), 'post_thumbnail_meta_box', null, 'side', 'low');
@@ -54,6 +60,7 @@ function change_image_box() {
 
 add_action( 'do_meta_boxes', 'change_image_box', 11 );
 
+// Set up custom post meta
 function twentythirteen_entry_meta() {
 	if ( is_sticky() && is_home() && ! is_paged() )
 		echo '<span class="featured-post">' . __( 'Sticky', 'twentythirteen' ) . '</span>';
@@ -73,7 +80,7 @@ function twentythirteen_entry_meta() {
 		echo '<span class="tags-links">' . $tag_list . '</span>';
 	}
 
-	// Post author
+	// Post author (tests for registered author signature or guest author name/signature)
 	$author_signature_path = get_stylesheet_directory() . '/images/' . get_the_author_meta('user_login') . '-signature.png';
 	$author_signature_image = get_stylesheet_directory_uri() . '/images/' . get_the_author_meta('user_login') . '-signature.png';
 	$guest_author = get_post_meta( get_the_ID(), 'Guest Author Name', true );
@@ -112,6 +119,7 @@ function twentythirteen_entry_meta() {
 	}
 }
 
+// Change date in footer copyright to Roman numerals
 function number_to_roman($num) {
 	$n = intval($num);
 	$result = "";
@@ -127,6 +135,7 @@ return $result;
 
 }
 
+// Change size of page header image
 function remove_twentythirteen_custom_header_setup() {
 	wp_dequeue_style( 'twentythirteen_custom_header_setup' );
 }
@@ -175,6 +184,7 @@ function modify_twentythirteen_custom_header_setup() {
 }
 add_action( 'after_setup_theme', 'modify_twentythirteen_custom_header_setup', 11 );
 
+// Define the default OpenGraph image
 function jeherve_custom_image( $media, $post_id, $args ) {
     if ( $media ) {
         return $media;
@@ -192,6 +202,7 @@ function jeherve_custom_image( $media, $post_id, $args ) {
 }
 add_filter( 'jetpack_images_get_images', 'jeherve_custom_image', 10, 3 );
 
+// Remove custom post formats
 function remove_post_formats() {
 	remove_theme_support('post-formats');
 }
