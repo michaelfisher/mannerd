@@ -79,11 +79,11 @@ function twentythirteen_entry_meta() {
 	}
 
 	// Post author (tests for registered author signature or guest author name/signature)
-	$author_signature_path = get_stylesheet_directory() . '/images/' . get_the_author_meta('user_login') . '-signature.png';
-	$author_signature_image = get_stylesheet_directory_uri() . '/images/' . get_the_author_meta('user_login') . '-signature.png';
+	$author_signature_path = get_stylesheet_directory() . '/images/signatures/' . get_the_author_meta('user_login') . '-signature.png';
+	$author_signature_image = get_stylesheet_directory_uri() . '/images/signatures/' . get_the_author_meta('user_login') . '-signature.png';
 	$guest_author = get_post_meta( get_the_ID(), 'Guest Author Name', true );
-	$guest_author_signature_path = get_stylesheet_directory() . '/images/' . strtolower( $guest_author ) . '-signature.png';
-	$guest_author_signature_image = get_stylesheet_directory_uri() . '/images/' . strtolower( $guest_author ) . '-signature.png';
+	$guest_author_signature_path = get_stylesheet_directory() . '/images/signatures/' . strtolower( $guest_author ) . '-signature.png';
+	$guest_author_signature_image = get_stylesheet_directory_uri() . '/images/signatures/' . strtolower( $guest_author ) . '-signature.png';
 	if ( 'post' == get_post_type() ) {
 		if ( ! empty( $guest_author ) ) {
 			if ( file_exists( $guest_author_signature_path ) ) {
