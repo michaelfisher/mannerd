@@ -525,6 +525,14 @@ button:active, input[type="submit"]:active, input[type="button"]:active, input[t
 
 /*------------------------------------------------------------ */
 
+/* Contact Form */
+select {
+	font-family: Crimson;
+	border: 2px solid #d0d0d0;
+	background-color: #fff;
+	padding: 10px;
+}
+
 /* Custom Add-Ons */
 img.rounded {
 	border-radius: 5px;
