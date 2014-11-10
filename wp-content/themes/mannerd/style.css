@@ -85,6 +85,7 @@
 	height: 2em;
 }
 
+
 /* Content Width */
 .entry-header, .entry-content, .entry-summary, .entry-meta {
 	margin: 0 auto;
@@ -302,7 +303,7 @@ footer.entry-meta {
 }
 
 .entry-content p a {
-	color: #A0A0A0;
+	color: #5588aa;
 }
 
 .entry-content p a:hover {
@@ -531,4 +532,15 @@ img.rounded {
 
 img.circle {
 	border-radius: 50%;
+}
+
+/* Special Classes */
+.no-indent {
+	text-indent: 0 !important;
+}
+
+.fine-print {
+	font-size: .75em;
+	font-style: italic;
+	color: #808080;
 }
