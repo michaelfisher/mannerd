@@ -87,20 +87,20 @@ function twentythirteen_entry_meta() {
 	if ( 'post' == get_post_type() ) {
 		if ( ! empty( $guest_author ) ) {
 			if ( file_exists( $guest_author_signature_path ) ) {
-				printf( '<span class="author vcard">Posted by: <img class="%1$s-signature" src="%2$s" title="Guest Author: %3$s"></span>',
+				printf( '<span class="author vcard">Guest Author: <img class="%1$s-signature" src="%2$s" title="Guest Author: %3$s"></span>',
 					strtolower( $guest_author ),
 					esc_url( $guest_author_signature_image ),
 					$guest_author
 				);
 			}
 			else {
-				printf( '<span class="author vcard">Posted by: <span title="Guest Author: %1$s">%1$s</span></span>',
+				printf( '<span class="author vcard">Guest Author: <span title="Guest Author: %1$s">%1$s</span></span>',
 				$guest_author
 				);
 			}
 		}
 		elseif ( file_exists( $author_signature_path ) ) {
-			printf( '<span class="author vcard">Posted by: <a class="url fn n" href="%1$s" title="%2$s" rel="author"><img class="%3$s-signature" src="%4$s"></a></span>',
+			printf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author"><img class="%3$s-signature" src="%4$s"></a></span>',
 				esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 				esc_attr( sprintf( __( 'View all posts by %s', 'twentythirteen' ), get_the_author() ) ),
 				get_the_author_meta('user_login'),
@@ -108,7 +108,7 @@ function twentythirteen_entry_meta() {
 			);
 		}
 		else {
-			printf( '<span class="author vcard">Posted by: <a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
+			printf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
 				esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 				esc_attr( sprintf( __( 'View all posts by %s', 'twentythirteen' ), get_the_author() ) ),
 				get_the_author()
