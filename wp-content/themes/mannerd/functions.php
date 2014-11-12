@@ -11,6 +11,13 @@ function custom_favicons() {
 add_action( 'wp_head', 'custom_favicons' ); //front end
 add_action( 'admin_head', 'custom_favicons' ); //admin end
 
+// Specify Twitter creator (since JetPack doesn't always get it right)
+function tweakjp_custom_twitter_site( $og_tags ) {
+	$og_tags['twitter:creator'] = '@mannerdisms';
+	return $og_tags;
+}
+add_filter( 'jetpack_open_graph_tags', 'tweakjp_custom_twitter_site', 11 );
+
 // Set custom logo on login page
 function custom_login_logo() { ?>
 	<style type="text/css">
