@@ -16,7 +16,7 @@
 
 			<div class="site-info">
 				<?php do_action( 'twentythirteen_credits' ); ?>
-				<!--<div id="social-icons">
+				<!--<div id="social-icons"> Font-Awesome is not loaded
 					<a id="facebook" target="_blank" href="http://facebook.com/mannerdisms"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
 					<a id="twitter" target="_blank" href="http://twitter.com/mannerdisms"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
 					<a id="pinterest" target="_blank" href="http://pinterest.com/mannerdisms"><i class="fa fa-pinterest fa-fw fa-3x"></i></a>
