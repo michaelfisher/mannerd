@@ -340,6 +340,25 @@ footer.entry-meta {
 	margin-bottom: 15px;
 }
 
+/* FB Like Section */
+.fb-like-single {
+	width: 100%;
+	text-align: center;
+}
+
+.fb-like-caption {
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+.fb-like-caption a {
+	color: #5588aa;
+}
+
+.fb-like-caption a:hover {
+	color: #808080;
+}
+
 /* Sharing Buttons */
 .sd-content {
 	text-align: center;
