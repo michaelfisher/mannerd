@@ -288,6 +288,11 @@ footer.entry-meta {
 	text-align: justify;
 }
 
+.entry-content h1,.entry-content h2,.entry-content h3,.entry-content h4,.entry-content h5,.entry-content h6 {
+	font-family: "Crimson";
+	margin-bottom: 5px;
+}
+
 .entry-content p {
 	text-indent: 25px;
 	margin-bottom: 15px;
@@ -514,17 +519,6 @@ button:active, input[type="submit"]:active, input[type="button"]:active, input[t
 	padding: 10px 24px 11px;
 }
 
-/*------------------------------------------------------------ */
-
-/* Media Queries */
-@media (max-width: 643px) {
-	.site-header .home-link {
-		display: none;
-	}
-}
-
-/*------------------------------------------------------------ */
-
 /* Contact Form */
 .contact-form select {
 	font-family: Crimson;
@@ -548,7 +542,69 @@ img.circle {
 }
 
 .fine-print {
-	font-size: .75em;
+	font-size: .85em;
 	font-style: italic;
 	color: #808080;
 }
+
+/* Store */
+.mannerd-store .view-cart-link {
+	text-align: right;
+}
+
+.mannerd-store .view-cart-link a {
+	color: #5588aa;
+}
+
+.mannerd-store .view-cart-link a:hover {
+	color: #808080;
+}
+
+.mannerd-store ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+.mannerd-store ul li {
+	display: inline-block;
+	max-width: 33%;
+	margin-bottom: 25px;
+	padding: 0 15px;
+}
+
+.mannerd-store .store-item {
+	background-color: #f0f0f0;
+	text-align: center;
+	padding: 15px;
+	border-radius: 7px;
+}
+
+.mannerd-store .store-item .item-price {
+	display: block;
+	margin-top: 5px;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-align: right;
+}
+
+.mannerd-store .store-item .buy-now-button {
+	display: inline-block;
+	margin-top: 0px;
+	background-color: #5588aa;
+	color: #ffffff;
+	padding: 10px 35px;
+	border-radius: 7px;
+}
+
+/*------------------------------------------------------------ */
+
+/* Media Queries */
+@media (max-width: 643px) {
+	.site-header .home-link {
+		display: none;
+	}
+}
+
+/*------------------------------------------------------------ */
+
+
