@@ -198,6 +198,10 @@ a:hover {
 }
 
 /* Content */
+.hentry {
+	padding: 40px 0 0 0;
+}
+
 .entry-header .entry-title {
 	margin: 0;
 	font-family: "Crimson";
