@@ -23,7 +23,6 @@
 				</div>-->
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/mannerd-white.png" title="<?php bloginfo( 'name' ); ?>" height="20px"/></a></br>
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">&copy; <?php echo number_to_roman(date('Y')); ?></a>
-				<div style="width:100%;" class="fb-like" data-href="https://www.facebook.com/mannerdisms" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
