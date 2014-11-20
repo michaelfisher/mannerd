@@ -1,29 +1,29 @@
-To: michael@thefisherhome.net
-Subject: [mannerd] Please moderate: "An Introduction"
+To: info@mannerd.com
+Subject: [mannerd] Please moderate: "Thirtieth Post"
 X-PHP-Originating-Script: 1000:class-phpmailer.php
-Date: Sat, 15 Nov 2014 00:50:49 +0000
+Date: Thu, 20 Nov 2014 18:57:02 +0000
 Return-Path: <wordpress@mannerd.local>
 From: WordPress <wordpress@mannerd.local>
-Message-ID: <8fce6ba22706d3f5212b26690c58d17a@mannerd.local>
+Message-ID: <bfc2b4eacbbcf76f4bc5565a7345e7b9@mannerd.local>
 X-Priority: 3
 X-Mailer: PHPMailer 5.2.7 (https://github.com/PHPMailer/PHPMailer/)
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
 
-A new comment on the post "An Introduction" is waiting for your approval
-http://mannerd.local/?p=6
+A new comment on the post "Thirtieth Post" is waiting for your approval
+http://mannerd.local/2014/11/05/thirtieth-post/
 
 Author : Mike (IP: 127.0.0.1 , localhost)
-E-mail : mike@mike.com
+E-mail : michael@thefisherhome.net
 URL    : 
 Whois  : http://whois.arin.net/rest/ip/127.0.0.1
 Comment: 
-Test comment
+This is a reply
 
-Approve it: http://mannerd.local/wp-admin/comment.php?action=approve&c=2
-Trash it: http://mannerd.local/wp-admin/comment.php?action=trash&c=2
-Spam it: http://mannerd.local/wp-admin/comment.php?action=spam&c=2
-Currently 1 comment is waiting for approval. Please visit the moderation panel:
+Approve it: http://mannerd.local/wp-admin/comment.php?action=approve&c=5
+Trash it: http://mannerd.local/wp-admin/comment.php?action=trash&c=5
+Spam it: http://mannerd.local/wp-admin/comment.php?action=spam&c=5
+Currently 2 comments are waiting for approval. Please visit the moderation panel:
 http://mannerd.local/wp-admin/edit-comments.php?comment_status=moderated
 
