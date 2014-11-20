@@ -342,8 +342,8 @@ footer.entry-meta {
 
 /* FB Like Section */
 .fb-like-single {
-	margin-top: -40px;
-	width: 100%;
+	margin: -40px auto 0 auto;
+	width: 90%;
 	text-align: center;
 }
 
