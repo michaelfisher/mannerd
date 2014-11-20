@@ -347,9 +347,12 @@ footer.entry-meta {
 	text-align: center;
 }
 
+.fb-like-single .fb-like {
+	padding-bottom: 25px;
+}
+
 .fb-like-caption {
 	text-align: center;
-	padding-bottom: 25px;
 }
 
 .fb-like-caption a {

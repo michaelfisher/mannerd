@@ -17,8 +17,8 @@ get_header(); ?>
 
 				<?php get_template_part( 'content', get_post_format() ); ?>
 				<div class="fb-like-single">
-					<div class="fb-like" data-href="https://www.facebook.com/mannerdisms" data-layout="standard" data-action="like" data-width="275px" data-show-faces="true" data-share="false"></div>
 					<div class="fb-like-caption">Like <a href="https://www.facebook.com/mannerdisms">Mannerd</a> on Facebook!</div>
+					<div class="fb-like" data-href="https://www.facebook.com/mannerdisms" data-layout="standard" data-action="like" data-width="275px" data-show-faces="true" data-share="false"></div>
 				</div>
 				<?php twentythirteen_post_nav(); ?>
 				<?php comments_template(); ?>
