@@ -512,6 +512,10 @@ footer #social-icons #pinterest:hover {
 	color: #c8232c;
 }
 
+footer #social-icons #instagram:hover {
+	color: #517fa4;
+}
+
 /* Buttons */
 button, input[type="submit"], input[type="button"], input[type="reset"] {
 	background: #707070;

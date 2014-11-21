@@ -11,14 +11,12 @@ function custom_favicons() {
 add_action( 'wp_head', 'custom_favicons' ); //front end
 add_action( 'admin_head', 'custom_favicons' ); //admin end
 
-/*
 function custom_fonts() {
 	$custom_font_path = get_stylesheet_directory_uri() . '/fonts/';
   	echo '<link rel="stylesheet" href="' . $custom_font_path . 'font-awesome/font-awesome.css' . '" />'; //Font-Awesome
 }
 
 add_action( 'wp_head', 'custom_fonts' );
-*/
 
 // Specify Twitter creator (since JetPack doesn't always get it right)
 function tweakjp_custom_twitter_site( $og_tags ) {
