@@ -178,6 +178,14 @@ a:hover {
 }
 
 /* Search Field */
+.search-field {
+	border: 2px solid #c0c0c0;
+}
+
+.search-field:focus {
+	border: 2px solid #808080;
+}
+
 .site-header .search-field {
 	background-image: url(images/search-icon.png);
 	font-family: "Inconsolata";
@@ -621,6 +629,15 @@ img.circle {
 	color: #ffffff;
 	padding: 10px 35px;
 	border-radius: 7px;
+}
+
+/* Error Pages */
+.error404 .page-title:before {
+	color: #404040;
+}
+
+.error404 .page-wrapper {
+	background-color: #f0f0f0;
 }
 
 /*------------------------------------------------------------ */
