@@ -64,7 +64,6 @@ add_action( 'wp_enqueue_scripts', 'remove_google_fonts', 11 );
 
 // Update text on Featured Image box to guide user when uploading an image
 function change_image_box() {
-	if ( $thumbnail_support )
 		remove_meta_box('postimagediv', __('Featured Image'), 'post_thumbnail_meta_box', null, 'side', 'low');
 		add_meta_box('postimagediv', __('Featured Image (1040x270px)'), 'post_thumbnail_meta_box', 'post', 'side', 'low');
 		add_meta_box('postimagediv', __('Featured Image (1040x270px)'), 'post_thumbnail_meta_box', 'page', 'side', 'low');
