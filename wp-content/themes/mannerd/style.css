@@ -464,6 +464,10 @@ footer.entry-meta {
 	display: none;
 }
 
+.no-comments {
+	background-color: #f0f0f0;
+}
+
 /* Contact Form */
 .contact-form textarea, .contact-form input {
 	border: 2px solid #d0d0d0;
