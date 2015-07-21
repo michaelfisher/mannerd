@@ -394,6 +394,18 @@ footer.entry-meta {
 	color: #c0c0c0;
 }
 
+.paging-navigation {
+	background-color: none;
+}
+
+.paging-navigation .meta-nav {
+	background-color: #808080;
+}
+
+.paging-navigation .meta-nav:hover {
+	background-color: #c0c0c0;
+}
+
 /* Comments */
 .comments-title {
 	font-family: "Crimson";
